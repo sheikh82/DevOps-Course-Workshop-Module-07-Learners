@@ -12,3 +12,14 @@ jobs:
       uses: actions/hello-world-javascript-action@v1.1 # Name of the action. This uses https://github.com/actions/hello-world-javascript-action
       with:                                            # This section is needed if you need to pass arguments to the action
         who-to-greet: 'Mona the Octocat'
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 5.0.x
+
+    - name: Build C# code
+      run: dotnet build --configuration Release
+
+    - name: Test C# code
+      run: dotnet test
