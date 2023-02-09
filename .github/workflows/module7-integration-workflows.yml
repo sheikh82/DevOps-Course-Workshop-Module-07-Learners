@@ -39,6 +39,8 @@ jobs:
       working-directory: ./DotnetTemplate.Web
       run: npm run build
 
-      - name: Run linter
+    - name: Run linter
       working-directory: ./DotnetTemplate.Web
       run: npm run lint
+
+
