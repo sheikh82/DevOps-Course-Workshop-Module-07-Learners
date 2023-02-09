@@ -23,7 +23,7 @@ Whilst it is helpful to be able to experiment locally, getting the app running i
 
 ### Test
 
-1. Run `dotnet test` inside the project folder. This will run the C# tests in the DotnetTemplate.Web.Tests project.
+1. Run `cd ..` inside the project folder. This will run the C# tests in the DotnetTemplate.Web.Tests project.
 2. Run `npm t` inside the DotnetTemplate.Web folder. This will run the TypeScript tests in DotnetTemplate.Web/Scripts/spec. They're run using [Jasmine](https://jasmine.github.io/).
 3. Run `npm run lint` inside the DotnetTemplate.Web folder. This will run linting on the TypeScript code, using [eslint](https://eslint.org/). Linting refers to checking the codebase for mistakes, either functional or stylistic. This project's linting currently reports zero errors, two warnings.
 
